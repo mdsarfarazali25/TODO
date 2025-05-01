@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.js"
+    />
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+      }
+    </style>
+  </head>
+  <body class="text-center">
+    <div class="shadow-lg rounded">
+      <h1 class="text-primary shadow-sm rounded">ToDo List</h1>
+      <div class="">
+        <input
+          type="text"
+          class="bg-info bg-opacity-10 border border-info border-start rounded"
+          placeholder="Enter"
+          id="taskEnter"
+        />
+
+        <button class="btn btn-success px-2 mx-2 my-0" id="addtask">
+          Add Task
+        </button>
+      </div>
+      <div id="couction"></div>
+      <ol
+        id="list"
+        class="m-2 text-capitalize fs-4 fw-medium overflow-auto"
+        style="height: 300px; display: inline-block; text-align: left"
+      ></ol>
+    </div>
+    <script src="./ToDoList.js"></script>
+    <script src="./file.js"></script>
+  </body>
+</html>
