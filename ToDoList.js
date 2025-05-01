@@ -18,7 +18,7 @@ function displayList() {
   if (listfromLC != null) {
     (list.innerHTML = ""),
       listfromLC.map((item, i) => {
-        list.innerHTML += `<li class="my-2 d-flex"  style=" justify-content: space-between;  border-bottom: 1px solid rgb(184, 180, 180);"> <span class="fs-1">.</span> ${item}&nbsp;&nbsp;&nbsp;<button height="10px" onclick = "deleteItem(${i})" class="btn btn-danger text-capitalize px-2 py-0 mb-2  "> delete item </button></li>`;
+        list.innerHTML += `<li class="my-2 d-flex"  style=" justify-content: space-between;  border-bottom: 1px solid rgb(184, 180, 180);"> <i class="fa-solid fa-hand-point-right mt-2"></i>&nbsp;&nbsp;${item}&nbsp;&nbsp;&nbsp;<button height="10px" onclick = "deleteItem(${i})" class="btn btn-danger text-capitalize px-2 py-0 mb-2  "> delete item </button></li>`;
       });
   }
 }
